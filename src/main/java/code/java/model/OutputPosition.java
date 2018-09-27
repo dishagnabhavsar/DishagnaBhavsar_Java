@@ -2,20 +2,20 @@ package code.java.model;
 
 public class OutputPosition {
 	private String instrument;
-	private String account;
+	private int account;
 	private String accountType;
-	private String quantity;
-	private String delta;
+	private Long quantity;
+	private Long delta;
 	public String getInstrument() {
 		return instrument;
 	}
 	public void setInstrument(String instrument) {
 		this.instrument = instrument;
 	}
-	public String getAccount() {
+	public int getAccount() {
 		return account;
 	}
-	public void setAccount(String account) {
+	public void setAccount(int account) {
 		this.account = account;
 	}
 	public String getAccountType() {
@@ -24,16 +24,16 @@ public class OutputPosition {
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
-	public String getQuantity() {
+	public Long getQuantity() {
 		return quantity;
 	}
-	public void setQuantity(String quantity) {
+	public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
-	public String getDelta() {
+	public Long getDelta() {
 		return delta;
 	}
-	public void setDelta(String delta) {
+	public void setDelta(Long delta) {
 		this.delta = delta;
 	}
 	@Override
