@@ -1,0 +1,29 @@
+------------------------------------------------------------------------------
+Author: Dishagna Bhavsar
+dishagna.bhavsar@gmail.com
+------------------------------------------------------------------------------
+
+Developing Tool: Core Java 7
+Build Tool : Gradle
+File Parser: Jackson-dataformat 2.9.2
+
+Resources:
+- All input and output file kept in resources
+- Output file will be generate in the bin folder
+
+
+Main class : Application.java
+Main Service : LedgerService.java
+
+Process Flow:
+Start: calculateProcessPosition()
+1. initPositions
+	- Read input file and store each data against stock symbol as instrument
+	- Each instrument contain two account for each stockSymbol 1. Internal(I) and External(E)
+2. fetchTransactions
+	- Read transaction file and store into list of Transaction object
+3. processTransaction
+	- Identify transaction type and perform operation as buy ans sell
+4. countDelta
+	- countDelta(Note: in account added one aditional field as delta with intial quantiy, which use in this step to count)
+	- write File
