@@ -27,3 +27,7 @@ Start: calculateProcessPosition()
 4. countDelta
 	- countDelta(Note: in account added one aditional field as delta with intial quantiy, which use in this step to count)
 	- write File
+
+Note:
+
+I have added sample test cases using SPOCK
